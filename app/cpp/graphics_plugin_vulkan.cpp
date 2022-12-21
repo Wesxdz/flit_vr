@@ -135,9 +135,9 @@ class VulkanGraphicsPlugin : public GraphicsPlugin {
 
     VkApplicationInfo app_info{};
     app_info.sType = VK_STRUCTURE_TYPE_APPLICATION_INFO;
-    app_info.pApplicationName = "quest-xr";
+    app_info.pApplicationName = "future-literate";
     app_info.applicationVersion = 1;
-    app_info.pEngineName = "quest-xr";
+    app_info.pEngineName = "future-literate";
     app_info.engineVersion = 1;
     app_info.apiVersion =
         VK_MAKE_VERSION(XR_VERSION_MAJOR(graphics_requirements.maxApiVersionSupported),

@@ -13,7 +13,7 @@ android {
         targetSdk = 29
         versionCode = 1
         versionName = "1.0"
-        applicationId = "app.artyomd.questxr"
+        applicationId = "app.paphos.flit"
         externalNativeBuild {
             cmake {
                 arguments.add("-DANDROID_STL=c++_static")
@@ -40,6 +40,13 @@ android {
         }
     }
     sourceSets {
+
+//        main {
+//            resources {
+//                srcDirs("res")
+//            }
+//        }
+
         getByName("main") {
             manifest.srcFile("AndroidManifest.xml")
         }

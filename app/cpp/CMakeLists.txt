@@ -13,19 +13,19 @@ set(SRC
         main.cpp
         )
 
-add_library(quest-xr SHARED ${SRC})
-target_include_directories(quest-xr PRIVATE ${CMAKE_CURRENT_LIST_DIR})
+add_library(future-literate SHARED ${SRC})
+target_include_directories(future-literate PRIVATE ${CMAKE_CURRENT_LIST_DIR})
 
-target_compile_definitions(quest-xr PRIVATE XR_USE_PLATFORM_ANDROID)
-target_compile_definitions(quest-xr PRIVATE XR_USE_GRAPHICS_API_VULKAN)
-target_compile_definitions(quest-xr PRIVATE VK_USE_PLATFORM_ANDROID_KHR)
+target_compile_definitions(future-literate PRIVATE XR_USE_PLATFORM_ANDROID)
+target_compile_definitions(future-literate PRIVATE XR_USE_GRAPHICS_API_VULKAN)
+target_compile_definitions(future-literate PRIVATE VK_USE_PLATFORM_ANDROID_KHR)
 
 add_library(native_app_glue STATIC ${ANDROID_NDK}/sources/android/native_app_glue/android_native_app_glue.c)
-target_include_directories(quest-xr SYSTEM PRIVATE ${ANDROID_NDK}/sources/android/native_app_glue)
+target_include_directories(future-literate SYSTEM PRIVATE ${ANDROID_NDK}/sources/android/native_app_glue)
 set(CMAKE_SHARED_LINKER_FLAGS "${CMAKE_SHARED_LINKER_FLAGS} -u ANativeActivity_onCreate")
 
 target_link_libraries(
-        quest-xr
+        future-literate
         vulkan-wrapper
         utils
         glm

@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-	package="app.artyomd.questxr">
+	package="app.paphos.flit">
 	<uses-feature
 		android:name="android.hardware.vr.headtracking"
 		android:required="true" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 	<application
 		android:allowBackup="false"
 		android:hasCode="false"
-		android:label="Quest XR"
+		android:label="Future Literate"
 		android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
 		<activity
 			android:name="android.app.NativeActivity"
@@ -18,7 +19,7 @@
 			android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
 			<meta-data
 				android:name="android.app.lib_name"
-				android:value="quest-xr" />
+				android:value="future-literate" />
 			<meta-data
 				android:name="com.oculus.vr.focusaware"
 				android:value="true" />
